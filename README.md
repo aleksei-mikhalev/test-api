@@ -18,7 +18,7 @@ docker-compose -p api up --build
 ```
 
 - API app [http://localhost:8080](http://localhost:8080)
-- PhpMyAdmin [http://localhost:8081](http://localhost:8081)
+- PhpMyAdmin [http://localhost:8081](http://localhost:8081) (Логин: root, Пароль: 1111)
 
 ## Установка без Docker
 

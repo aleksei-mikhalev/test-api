@@ -1,0 +1,13 @@
+AddDefaultCharset UTF-8
+Options +FollowSymLinks
+RewriteEngine on
+RewriteBase /
+
+RewriteCond %{REQUEST_FILENAME} !-f [OR]
+RewriteRule ^(.*)/$ /$1/index.php [L]
+
+RewriteCond %{REQUEST_FILENAME} !-f [OR]
+RewriteCond %{REQUEST_FILENAME} \.php$
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_URI} !^/index\.php
+RewriteRule ^(.*)$ index.php?route=$1 [L,QSA]

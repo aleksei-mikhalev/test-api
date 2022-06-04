@@ -9,16 +9,23 @@ ___
 - 8081 - PhpMyAdmin
 - 8080 - API App
 
-## Установка
+## Установка с Docker
 
 ```shell
-git clone git@github.com:realslane/Docker-API-Test.git api
+git clone https://github.com/aleksei-mikhalev/test-api.git api
 cd api
 docker-compose -p api up --build
 ```
 
 - API app [http://localhost:8080](http://localhost:8080)
 - PhpMyAdmin [http://localhost:8081](http://localhost:8081)
+
+## Установка без Docker
+
+- Склонировать репозиторий: git clone https://github.com/aleksei-mikhalev/test-api.git api
+- Поместить все файлы из папки web в корневую директорию проекта/сайта (нужна поддержка .htaccess)
+- Импортировать файл dump.sql в нужную БД
+- Настроить параметры доступа к БД в файле src\DB\DBConnect.php
 
 ## Примеры URL для проверки
 
